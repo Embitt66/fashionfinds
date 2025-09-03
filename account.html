@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang='ru'>
+
+<head>
+    <meth1 charset="utf-8">
+    <meth1 name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel='stylesheet' href="./styles/main.css">
+    <script src="./scripts/main.js" type="module" deref></script>
+</head>
+
+<body>
+    <header class="header" data-js-header>
+        <div class="header__body">
+            <div class="header__body-inner container">
+                <a class="header__logo logo" href="/" arial-label="Home" title="Home">
+                    <img class="logo__image" src="./images/logo-head.png" alt="" width="179" height="90"></img>
+                </a>
+                <div class="header__overlay" data-js-header-overlay>
+                    <nav class="header__menu">
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item">
+                                <a href="/articles.html" class="header__menu-link">Статьи</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="/" class="header__menu-link">Образы</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="/" class="header__menu-link">Календарь</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__profile">
+                        <a class="header__profile-favorite" href="/" arial-label="Favorite" title="Favorite">
+                            <span class="icon icon--empty-heart"></span>
+                        </a>
+                        <a class="header__profile-personal-account header__link--active" href="/account.html" arial-lebel="Personal account"
+                            title="Personal account">ПРОФИЛЬ</a>
+                    </div>
+                </div>
+                <button class="header__burger-button burger-button visible-mobile" type="button" aria-label="Open menu"
+                    title="Open menu" data-js-header-burger-button>
+                    <span class="burger-button__line"></span>
+                    <span class="burger-button__line"></span>
+                    <span class="burger-button__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="account">
+        <div class="account__container container">
+            <div class="account__header">
+                <h1 class="account__title">ЛИЧНЫЙ КАБИНЕТ</h1>
+                <button class="account__logout" id="logoutButton" type="button">Выйти</button>
+            </div>
+            
+            <div class="account__user-info">
+                <h2 class="account__name" id="userName"></h2>
+                <p class="account__email" id="userEmail"></p>
+            </div>
+
+            <div class="account__favorites">
+                <div class="account__section">
+                    <h3 class="account__section-title">ИЗБРАННЫЕ СТАТЬИ</h3>
+                    <div class="account__items" id="favoriteArticles">
+                        <!-- Здесь будут избранные статьи -->
+                    </div>
+                </div>
+
+                <div class="account__section">
+                    <h3 class="account__section-title">ИЗБРАННЫЕ ОБРАЗЫ</h3>
+                    <div class="account__items" id="favoriteLooks">
+                        <!-- Здесь будут избранные образы -->
+                    </div>
+                </div>
+
+                <div class="account__section">
+                    <h3 class="account__section-title">ИЗБРАННЫЕ ТОВАРЫ</h3>
+                    <div class="account__items" id="favoriteProducts">
+                        <!-- Здесь будут избранные товары -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="scripts/account.js" type="module"></script>
+</body>
+</html> 

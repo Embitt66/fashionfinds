@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang='ru'>
+
+<head>
+    <meth1 charset="utf-8">
+    <meth1 name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel='stylesheet' href="./styles/main.css">
+    <script src="./scripts/main.js" type="module" deref></script>
+</head>
+
+<body>
+    <header class="header" data-js-header>
+        <div class="header__body">
+            <div class="header__body-inner container">
+                <a class="header__logo logo" href="/" arial-label="Home" title="Home">
+                    <img class="logo__image" src="./images/logo-head.png" alt="" width="179" height="90"></img>
+                </a>
+                <div class="header__overlay" data-js-header-overlay>
+                    <nav class="header__menu">
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item">
+                                <a href="/articles.html" class="header__menu-link">Статьи</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="/looks.html" class="header__menu-link">Образы</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="/" class="header__menu-link">Календарь</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__profile">
+                        <a class="header__profile-favorite" href="/" arial-label="Favorite" title="Favorite">
+                            <span class="icon icon--empty-heart"></span>
+
+                        </a>
+                        <a class="header__profile-personal-account" href="/profile.html" arial-lebel="Personal account"
+                            title="Personal account">ПРОФИЛЬ</a>
+                    </div>
+                </div>
+                <button class="header__burger-button burger-button visible-mobile" type="button" aria-label="Open menu"
+                    title="Open menu" data-js-header-burger-button>
+                    <span class="burger-button__line"></span>
+                    <span class="burger-button__line"></span>
+                    <span class="burger-button__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero" data-js-hero>
+            <div class="hero__articles">
+                <ul class="hero__articles-list">
+                    <li class="hero__articles-item">
+                        <h4 class="hero__articles-signature">Статьи недели</h4>
+                    </li>
+                    <li class="hero__articles-item">
+                        <span class="hero__articles-line"></span>
+                    </li>
+                    <li class="hero__articles-item-scroller scroller" data-direction="left" data-speed="slow" data-js-hero-scroller>
+                        <ul class="hero__articles-item scroller__inner">
+                            <li class="hero__articles-item-elements">
+                                <img href="/" class="hero__articles-item-pic" src="./images/met-gala-2025.svg" alt="" loading="lazy"/>
+                                <a href="/article.html?id=5" class="hero__articles-item-text">Met Gala 2025</a>
+                            </li>
+                            <li class="hero__articles-item-elements">
+                                <img href="/" class="hero__articles-item-pic" src="./images/Paris-Fashion-Week.svg" alt="" loading="lazy"/>
+                                <a href="/article.html?id=2" class="hero__articles-item-text">Paris Fashion Week</a>
+                            </li>
+                            <li class="hero__articles-item-elements">
+                                <img href="/" class="hero__articles-item-pic" src="./images/Tokyo-Fashion-Week.svg" alt="" loading="lazy"/>
+                                <a href="/article.html?id=3" class="hero__articles-item-text">Tokyo Fashion Week</a>
+                            </li>
+                            <li class="hero__articles-item-elements">
+                                <img href="/" class="hero__articles-item-pic" src="./images/maison-margiela.svg" alt="" loading="lazy"/>
+                                <a href="/article.html?id=4" class="hero__articles-item-text">Maison Martin Margiela</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="hero__articles-item">
+                        <span class="hero__articles-line"></span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="logo-main container">
+            <div>
+                <img class="logo-main__gif" src="./gif/gif-logo.gif" alt="" width="450" height="250" />
+               <!--  <h6 class="logo-main__text"></h6> -->
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <h1></h1>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Образ Maison Margiela</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/look.js" type="module"></script>
+    <script src="js/favorite.js"></script>
+</head>
+
+<body>
+    <header class="header" data-js-header>
+        <div class="header__body">
+            <div class="header__body-inner container">
+                <a class="header__logo logo" href="/" arial-label="Home" title="Home">
+                    <img class="logo__image" src="./images/logo-head.png" alt="" width="179" height="90">
+                </a>
+                <div class="header__overlay" data-js-header-overlay>
+                    <nav class="header__menu">
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item">
+                                <a href="/articles.html" class="header__menu-link">Статьи</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="/looks.html" class="header__menu-link">Образы</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="/" class="header__menu-link">Календарь</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__profile">
+                        <a class="header__profile-favorite" href="/" arial-label="Favorite" title="Favorite">
+                            <span class="icon icon--empty-heart"></span>
+                        </a>
+                        <a class="header__profile-personal-account" href="/profile.html" arial-lebel="Personal account"
+                            title="Personal account">ПРОФИЛЬ</a>
+                    </div>
+                </div>
+                <button class="header__burger-button burger-button visible-mobile" type="button" aria-label="Open menu"
+                    title="Open menu" data-js-header-burger-button>
+                    <span class="burger-button__line"></span>
+                    <span class="burger-button__line"></span>
+                    <span class="burger-button__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <article class="look">
+            <div class="container">
+                <div class="look__header">
+                    <div class="look__header-content">
+                        <h1 class="look__title">Образ Maison Margiela</h1>
+                        <p class="look__subtitle">Весенне-летняя коллекция MM6 Maison Margiela 2025</p>
+                    </div>
+                    <button class="look__favorite" data-id="look-1" aria-label="Добавить в избранное">
+                        <span class="icon icon--empty-heart"></span>
+                    </button>
+                </div>
+
+                <div class="look__content">
+                    <div class="look__text-content">
+                        <div class="look__description">
+                            <p>Французский Дом из сезона в сезон презентует смелые наряды — за это поклонники его и любят. На этот раз не обошлось без деконструкции (например, джинсовых рубашек с вырезами по бокам), выцветших оттенков, «постиранных» тканей и понятных, носибельных «луков» в утилитарном стиле. Асимметричные и неидеальные наряды добавляют коллекции фактуры и оригинальности; как, кстати, объемные кожаные куртки, «тропические» принты и обувь металлического оттенка.</p>
+                            <p>Здесь эстетика преппи чередуется с байкерской, а классические силуэты появляются в неожиданных интерпретациях, к примеру, платья в виде плащей или юбки, намеренно надетые боковым швом вперед.</p>
+                        </div>
+
+                        <div class="look__elements">
+                            <h2 class="look__elements-title">Элементы образа</h2>
+                            <div class="look__elements-list">
+                                <div class="look__element">
+                                    <h3 class="look__element-title">Серебристая куртка:</h3>
+                                    <ul class="look__element-features">
+                                        <li>Объёмный силуэт с прямыми линиями</li>
+                                        <li>Высокий воротник-стойка, придающий образу структуру и технологичный вид</li>
+                                        <li>Материал выглядит как металлизированная ткань, что усиливает ощущение "космического" стиля</li>
+                                    </ul>
+                                </div>
+                                <div class="look__element">
+                                    <h3 class="look__element-title">Облегающие леггинсы:</h3>
+                                    <ul class="look__element-features">
+                                        <li>Выполнены из того же или схожего серебристого, глянцевого материала</li>
+                                        <li>Подчёркивают силуэт ног и создают визуальный эффект "второй кожи"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="look__image-container">
+                        <img class="look__image" src="./images/look-margela-1.jpg" alt="Образ Maison Margiela">
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        
+    </footer>
+</body>
+
+</html> 

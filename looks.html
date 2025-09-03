@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Образы</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/looks.js" type="module"></script>
+    <script src="js/favorite.js"></script>
+</head>
+
+
+<body>
+    <header class="header" data-js-header>
+        <div class="header__body">
+            <div class="header__body-inner container">
+                <a class="header__logo logo" href="/" arial-label="Home" title="Home">
+                    <img class="logo__image" src="./images/logo-head.png" alt="" width="179" height="90"></img>
+                </a>
+                <div class="header__overlay" data-js-header-overlay>
+                    <nav class="header__menu">
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item">
+                                <a href="/articles.html" class="header__menu-link">Статьи</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="/looks.html" class="header__menu-link active">Образы</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="/" class="header__menu-link">Календарь</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__profile">
+                        <a class="header__profile-favorite" href="/" arial-label="Favorite" title="Favorite">
+                            <span class="icon icon--empty-heart"></span>
+
+                        </a>
+                        <a class="header__profile-personal-account" href="/profile.html" arial-lebel="Personal account"
+                            title="Personal account">ПРОФИЛЬ</a>
+                    </div>
+                </div>
+                <button class="header__burger-button burger-button visible-mobile" type="button" aria-label="Open menu"
+                    title="Open menu" data-js-header-burger-button>
+                    <span class="burger-button__line"></span>
+                    <span class="burger-button__line"></span>
+                    <span class="burger-button__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="looks">
+                <h1 class="looks__title">Образы</h1>
+                <div class="looks__grid">
+                    <article class="look-card">
+                        <div class="look-card__header">
+                            <a href="/look.html?id=margela-1" class="look-card__link">
+                                <div class="look-card__image-container">
+                                    <img class="look-card__image" src="images/look-margela-1.jpg" alt="Maison Margiela Look 1">
+                                </div>
+                            </a>
+                            <button class="look__favorite" data-id="look-1" aria-label="Добавить в избранное">
+                                <span class="icon icon--empty-heart"></span>
+                            </button>
+                        </div>
+                        <div class="look-card__content">
+                            <h2 class="look-card__title">Maison Margiela</h2>
+                            <p class="look-card__text">Весна-Лето 2024</p>
+                        </div>
+                    </article>
+
+                    <article class="look-card">
+                        <div class="look-card__header">
+                            <a href="/look.html?id=margela-2" class="look-card__link">
+                                <div class="look-card__image-container">
+                                    <img class="look-card__image" src="images/look-margela-2.jpg" alt="Maison Margiela Look 2">
+                                </div>
+                            </a>
+                            <button class="look__favorite" data-id="look-2" aria-label="Добавить в избранное">
+                                <span class="icon icon--empty-heart"></span>
+                            </button>
+                        </div>
+                        <div class="look-card__content">
+                            <h2 class="look-card__title">Maison Margiela</h2>
+                            <p class="look-card__text">Весна-Лето 2024</p>
+                        </div>
+                    </article>
+
+                    <article class="look-card">
+                        <div class="look-card__header">
+                            <a href="/look.html?id=margela-3" class="look-card__link">
+                                <div class="look-card__image-container">
+                                    <img class="look-card__image" src="images/look-margela-3.jpg" alt="Maison Margiela Look 3">
+                                </div>
+                            </a>
+                            <button class="look__favorite" data-id="look-3" aria-label="Добавить в избранное">
+                                <span class="icon icon--empty-heart"></span>
+                            </button>
+                        </div>
+                        <div class="look-card__content">
+                            <h2 class="look-card__title">Maison Margiela</h2>
+                            <p class="look-card__text">Весна-Лето 2024</p>
+                        </div>
+                    </article>
+
+                    <article class="look-card">
+                        <div class="look-card__header">
+                            <a href="/look.html?id=westwood-1" class="look-card__link">
+                                <div class="look-card__image-container">
+                                    <img class="look-card__image" src="images/look-westwood-1.jpg" alt="Vivienne Westwood Look 1">
+                                </div>
+                            </a>
+                            <button class="look__favorite" data-id="look-4" aria-label="Добавить в избранное">
+                                <span class="icon icon--empty-heart"></span>
+                            </button>
+                        </div>
+                        <div class="look-card__content">
+                            <h2 class="look-card__title">Vivienne Westwood</h2>
+                            <p class="look-card__text">Осень-Зима 2023/24</p>
+                        </div>
+                    </article>
+
+                    <article class="look-card">
+                        <div class="look-card__header">
+                            <a href="/look.html?id=westwood-2" class="look-card__link">
+                                <div class="look-card__image-container">
+                                    <img class="look-card__image" src="images/look-westwood-2.jpg" alt="Vivienne Westwood Look 2">
+                                </div>
+                            </a>
+                            <button class="look__favorite" data-id="look-5" aria-label="Добавить в избранное">
+                                <span class="icon icon--empty-heart"></span>
+                            </button>
+                        </div>
+                        <div class="look-card__content">
+                            <h2 class="look-card__title">Vivienne Westwood</h2>
+                            <p class="look-card__text">Осень-Зима 2023/24</p>
+                        </div>
+                    </article>
+
+                    <article class="look-card">
+                        <div class="look-card__header">
+                            <a href="/look.html?id=westwood-3" class="look-card__link">
+                                <div class="look-card__image-container">
+                                    <img class="look-card__image" src="images/look-westwood-3.jpg" alt="Vivienne Westwood Look 3">
+                                </div>
+                            </a>
+                            <button class="look__favorite" data-id="look-6" aria-label="Добавить в избранное">
+                                <span class="icon icon--empty-heart"></span>
+                            </button>
+                        </div>
+                        <div class="look-card__content">
+                            <h2 class="look-card__title">Vivienne Westwood</h2>
+                            <p class="look-card__text">Осень-Зима 2023/24</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        
+    </footer>
+</body>
+
+</html> 

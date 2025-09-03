@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang='ru'>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel='stylesheet' href="./styles/main.css">
+    <link rel='stylesheet' href="./styles/blocks/articles.css">
+    <script src="./scripts/main.js" type="module" defer></script>
+</head>
+
+<body>
+    <header class="header" data-js-header>
+        <div class="header__body">
+            <div class="header__body-inner container">
+                <a class="header__logo logo" href="/" arial-label="Home" title="Home">
+                    <img class="logo__image" src="./images/logo-head.png" alt="" width="179" height="90">
+                </a>
+                <div class="header__overlay" data-js-header-overlay>
+                    <nav class="header__menu">
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item">
+                                <a href="/articles.html" class="header__menu-link active">Статьи</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="/" class="header__menu-link">Образы</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="/" class="header__menu-link">Календарь</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__profile">
+                        <a class="header__profile-favorite" href="/" arial-label="Favorite" title="Favorite">
+                            <span class="icon icon--empty-heart"></span>
+                        </a>
+                        <a class="header__profile-personal-account" href="/" arial-lebel="Personal account"
+                            title="Personal account">ПРОФИЛЬ</a>
+                    </div>
+                </div>
+                <button class="header__burger-button burger-button visible-mobile" type="button" aria-label="Open menu"
+                    title="Open menu" data-js-header-burger-button>
+                    <span class="burger-button__line"></span>
+                    <span class="burger-button__line"></span>
+                    <span class="burger-button__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="articles container">
+            <h1 class="articles__title">Статьи</h1>
+            <div class="articles__grid">
+                
+                <article class="article-card">
+                    <div class="article-card__image-container">
+                        <img class="article-card__image" src="./images/_bootsonlysummer.svg" alt="#BootsOnlySummer" loading="lazy">
+                    </div>
+                    <div class="article-card__content">
+                        <h2 class="article-card__title">#BootsOnlySummer</h2>
+                        <p class="article-card__excerpt">Лето в бутсах — новый модный вызов?</p>
+                        <a href="/article.html?id=6" class="article-card__link">Читать далее</a>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-card__image-container">
+                        <img class="article-card__image" src="./images/оскар-2025.svg" alt="Оскар 2025" loading="lazy">
+                    </div>
+                    <div class="article-card__content">
+                        <h2 class="article-card__title">Оскар 2025</h2>
+                        <p class="article-card__excerpt">От винтажного гламура до смелых высказываний</p>
+                        <a href="/article.html?id=7" class="article-card__link">Читать далее</a>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-card__image-container">
+                        <img class="article-card__image" src="./images/john galliano.svg" alt="Джон Гальяно" loading="lazy">
+                    </div>
+                    <div class="article-card__content">
+                        <h2 class="article-card__title">Джон Гальяно</h2>
+                        <p class="article-card__excerpt">Возвращение драматурга моды</p>
+                        <a href="/article.html?id=8" class="article-card__link">Читать далее</a>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-card__image-container">
+                        <img class="article-card__image" src="./images/hedi-slimane.svg" alt="Эди Слиман" loading="lazy">
+                    </div>
+                    <div class="article-card__content">
+                        <h2 class="article-card__title">Эди Слиман</h2>
+                        <p class="article-card__excerpt">Герой нулевых возвращает моду на неряшливый гламур</p>
+                        <a href="/article.html?id=9" class="article-card__link">Читать далее</a>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-card__image-container">
+                        <img class="article-card__image" src="./images/met-gala-2023.svg" alt="Met Gala 2023" loading="lazy">
+                    </div>
+                    <div class="article-card__content">
+                        <h2 class="article-card__title">Met Gala 2023</h2>
+                        <p class="article-card__excerpt">Самые яркие образы с главного модного события года</p>
+                        <a href="/article.html?id=1" class="article-card__link">Читать далее</a>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-card__image-container">
+                        <img class="article-card__image" src="./images/met-gala-2025.svg" alt="Met Gala 2025" loading="lazy">
+                    </div>
+                    <div class="article-card__content">
+                        <h2 class="article-card__title">Met Gala 2025</h2>
+                        <p class="article-card__excerpt">Тема этого года — «черный дендизм»</p>
+                        <a href="/article.html?id=5" class="article-card__link">Читать далее</a>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-card__image-container">
+                        <img class="article-card__image" src="./images/Paris-Fashion-Week.svg" alt="Paris Fashion Week" loading="lazy">
+                    </div>
+                    <div class="article-card__content">
+                        <h2 class="article-card__title">Paris Fashion Week</h2>
+                        <p class="article-card__excerpt">Обзор показов и тренды сезона</p>
+                        <a href="/article.html?id=2" class="article-card__link">Читать далее</a>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-card__image-container">
+                        <img class="article-card__image" src="./images/Tokyo-Fashion-Week.svg" alt="Tokyo Fashion Week" loading="lazy">
+                    </div>
+                    <div class="article-card__content">
+                        <h2 class="article-card__title">Tokyo Fashion Week</h2>
+                        <p class="article-card__excerpt">Японские дизайнеры и их видение моды</p>
+                        <a href="/article.html?id=3" class="article-card__link">Читать далее</a>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-card__image-container">
+                        <img class="article-card__image" src="./images/maison-margiela.svg" alt="Maison Martin Margiela" loading="lazy">
+                    </div>
+                    <div class="article-card__content">
+                        <h2 class="article-card__title">Maison Martin Margiela</h2>
+                        <p class="article-card__excerpt">История бренда и его влияние на современную моду</p>
+                        <a href="/article.html?id=4" class="article-card__link">Читать далее</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <!-- Footer content -->
+        </div>
+    </footer>
+</body>
+
+</html> 

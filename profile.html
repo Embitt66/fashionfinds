@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang='ru'>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel='stylesheet' href="./styles/main.css">
+    <script src="./scripts/main.js" type="module"></script>
+    <script src="./scripts/profile.js" type="module"></script>
+    <script src="./js/favorite.js"></script>
+</head>
+
+<body>
+    <header class="header" data-js-header>
+        <div class="header__body">
+            <div class="header__body-inner container">
+                <a class="header__logo logo" href="/" arial-label="Home" title="Home">
+                    <img class="logo__image" src="./images/logo-head.png" alt="" width="179" height="90">
+                </a>
+                <div class="header__overlay" data-js-header-overlay>
+                    <nav class="header__menu">
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item">
+                                <a href="/articles.html" class="header__menu-link">Статьи</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="/looks.html" class="header__menu-link">Образы</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="/" class="header__menu-link">Календарь</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__profile">
+                        <a class="header__profile-favorite" href="/" arial-label="Favorite" title="Favorite">
+                            <span class="icon icon--empty-heart"></span>
+                        </a>
+                        <a class="header__profile-personal-account" href="/profile.html" arial-lebel="Personal account"
+                            title="Personal account">ПРОФИЛЬ</a>
+                    </div>
+                </div>
+                <button class="header__burger-button burger-button visible-mobile" type="button" aria-label="Open menu"
+                    title="Open menu" data-js-header-burger-button>
+                    <span class="burger-button__line"></span>
+                    <span class="burger-button__line"></span>
+                    <span class="burger-button__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="profile">
+                <div class="profile__container">
+                    <h1 class="profile__title">ДОБРО ПОЖАЛОВАТЬ!</h1>
+                    <form class="profile__form">
+                        <input type="text" class="profile__input" placeholder="Введите логин или почту">
+                        <input type="password" class="profile__input" placeholder="Введите пароль">
+                        <div class="profile__buttons">
+                            <button type="submit" class="profile__button">ВОЙТИ</button>
+                            <a href="/register.html" class="profile__button profile__button--register">РЕГИСТРАЦИЯ</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <section class="profile__favorites">
+                <h2 class="profile__section-title">Избранные статьи</h2>
+                <ul class="profile__favorites-grid" id="favoriteArticles">
+                    <!-- Шаблон для статьи -->
+                    <template id="favoriteArticleTemplate">
+                        <li class="profile__favorite-item">
+                            <a href="" class="profile__favorite-link">
+                                <img class="profile__favorite-image" src="" alt="">
+                                <div class="profile__favorite-content">
+                                    <h3 class="profile__favorite-title"></h3>
+                                    <time class="profile__favorite-date"></time>
+                                </div>
+                            </a>
+                            <button class="profile__favorite-btn" aria-label="Remove from favorites">
+                                <img src="/icons/heart.svg" alt="Remove from favorites">
+                            </button>
+                        </li>
+                    </template>
+                    <!-- Сообщение об отсутствии избранных статей -->
+                    <li class="profile__no-favorites" id="noFavoritesMessage" style="display: none;">
+                        У вас пока нет избранных статей
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <!-- Footer content -->
+        </div>
+    </footer>
+</body>
+</html> 
